@@ -31,7 +31,7 @@ rules: [
 
 8. `npm i -D mini-css-extract-plugin` 安装这个插件，可以把style.css单独生成一个css文件供html引入。区别于style-loader
 
-9.` npm i -D postcss postcss-loader postcss-preset-env autoprefixer` 安装postcss和autoprefixer
+9. ` npm i -D postcss postcss-loader postcss-preset-env autoprefixer` 安装postcss和autoprefixer
 
 10. create `postcss.config.js` file with content below:
 ```javascript

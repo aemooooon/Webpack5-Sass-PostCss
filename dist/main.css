@@ -33,6 +33,15 @@ header p {
 .contact button {
   background: #444;
 }
+.contact .info {
+  background: gray;
+}
+.contact .info p {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 /*!************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/reg.css ***!
   \************************************************************************************************************************************************/

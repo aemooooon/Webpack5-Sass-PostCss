@@ -1,57 +1,37 @@
 /*!***************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/style.scss ***!
   \***************************************************************************************************************************************************/
-:root {
-  --main_bg: mediumpurple;
-}
-
-body {
-  background-color: mediumpurple;
-  background-color: var(--main_bg);
-  color: moccasin;
-}
-
-.container {
-  padding: 1rem;
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(white));
-  background: linear-gradient(to top, black, white);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: lightblue;
+  height: 100vh;
+  color: #444;
 }
-.container h1 {
-  font-size: 68px;
-  text-align: center;
+header button {
+  height: 50px;
+  background: purple;
 }
-
-::-webkit-input-placeholder {
-  color: gray;
+header button::after {
+  content: "helloooooo";
 }
-
-::-moz-placeholder {
-  color: gray;
-}
-
-:-ms-input-placeholder {
-  color: gray;
-}
-
-::-ms-input-placeholder {
-  color: gray;
+header p {
+  font-size: 2rem;
+  color: #444;
 }
 
-::placeholder {
-  color: gray;
+.contact {
+  background: #000;
 }
-
-.image {
-  background-image: url("");
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .image {
-    background-image: url("");
-  }
+.contact button {
+  background: #444;
 }
 /*!************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/reg.css ***!

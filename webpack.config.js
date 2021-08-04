@@ -13,7 +13,7 @@ module.exports = {
                     "css-loader",
                     "sass-loader",
                     "postcss-loader"], // style-loader 把css写在js里面，然后通过head中间的style渲染出来，"MiniCssExtractPlugin.loader" 将会生成一个单独的css文件
-            }
+            },
         ]
     },
 

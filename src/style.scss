@@ -1,35 +1,39 @@
+$primaryBtn: purple;
+$textColor : #444;
 
-:root{
-    --main_bg: mediumpurple;
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-$light-text: moccasin;
+header {
+  @include flexCenter();
 
-body{
-    background-color: var(--main_bg);
-    color: $light-text;
+  background: lightblue;
+  height: 100vh;
+  color: $textColor;
+
+  button {
+      height    : 50px;
+      background: $primaryBtn;
+
+      &::after {
+          content: "helloooooo";
+      }
+  }
+
+  p {
+      font-size: 2rem;
+      color    : $textColor;
+  }
 }
 
-.container{
-    padding: 1rem;
-    display: flex;
-    background: linear-gradient(to top, black, white);
 
-    h1 {
-        font-size: 68px;
-        text-align: center;
-    }
+.contact {
+  background: #000;
+
+  button {
+    background: $textColor ;
+  }
 }
-
-::placeholder {
-    color: gray;
-  }
-  
-  .image {
-    background-image: url('');
-  }
-  @media (min-resolution: 2dppx) {
-    .image {
-      background-image: url('');
-    }
-  }

@@ -77,9 +77,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const headline = "Welcome to the webpage"
-
-document.querySelector('h1').innerText=headline
+console.log('Hello world')
 }();
 /******/ })()
 ;

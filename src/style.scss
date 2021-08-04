@@ -2,30 +2,30 @@ $primaryBtn: purple;
 $textColor : #444;
 
 @mixin flexCenter {
-  display: flex;
+  display        : flex;
   justify-content: center;
-  align-items: center;
+  align-items    : center;
 }
 
 header {
   @include flexCenter();
 
   background: lightblue;
-  height: 100vh;
-  color: $textColor;
+  height    : 100vh;
+  color     : $textColor;
 
   button {
-      height    : 50px;
-      background: $primaryBtn;
+    height    : 50px;
+    background: $primaryBtn;
 
-      &::after {
-          content: "helloooooo";
-      }
+    &::after {
+      content: "helloooooo";
+    }
   }
 
   p {
-      font-size: 2rem;
-      color    : $textColor;
+    font-size: 2rem;
+    color    : $textColor;
   }
 }
 
@@ -34,6 +34,15 @@ header {
   background: #000;
 
   button {
-    background: $textColor ;
+    background: $textColor;
+  }
+
+  .info {
+    background: gray;
+
+    p {
+      transition: all 0.3s;
+      transform : scale(1.2);
+    }
   }
 }
